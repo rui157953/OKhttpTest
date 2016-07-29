@@ -48,6 +48,12 @@ public class OkHttpManager {
         deliveryCallback(request,callbck);
     }
 
+    /**
+     * Post请求
+     * @param url
+     * @param requestBody
+     * @param callbck
+     */
     public void okhttpPost(String url, Map<String,String> requestBody, HttpUtils.ResultCallback callbck) {
         FormBody.Builder builder = new FormBody.Builder();
         Set<String> keySet = requestBody.keySet();
